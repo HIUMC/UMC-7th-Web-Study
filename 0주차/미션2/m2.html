@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top {
+            display: flex;
+        }
+
+        .header {
+            flex: 1;
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            flex: 3;
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 150px;
+            text-align: center;
+        }
+
+        .middle {
+            flex: 2;
+            display: grid;
+            grid-template-columns:  2fr 3fr;
+            gap: 200px;
+            padding: 20;
+        }
+
+
+        .main {
+            background-color: #34495e;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            aspect-ratio: 1 / 1;
+        }
+
+        .side {
+            display: grid;
+            grid-template-rows:  1fr 1fr;
+        }
+
+        .image {
+            background-color: #bdc3c7;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .extra {
+            background-color: #1abc9c;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner {
+            background-color: #f1c40f;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top"> 
+            <div class="header">HEADER</div>
+            <div class="menu">MENU</div>
+        </div>
+        <div class="hero">HERO</div>
+        <div class="middle">
+            <div class="main">MAIN</div>
+            <div class="side">
+                <div class="image">IMAGE</div>
+                <div class="extra">EXTRA</div>
+            </div>
+        </div>
+        <div class="banner">BANNER</div>
+    </div>
+</body>
+</html>

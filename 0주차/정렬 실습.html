@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Centered Text</title>
+    <style>
+        body {
+            height: 100vh; 
+            position: relative; 
+        }
+        .text {
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); /* 요소의 크기만큼 이동 */
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>가운데 정렬된 텍스트</h1>
+    </div>
+</body>
+</html>
