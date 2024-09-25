@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 30px;
+      }
+
+      .container {
+        display: grid;
+        grid-template: 1fr 4fr 2fr 2fr 1.5fr / 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header menu menu menu"
+          "hero hero hero hero"
+          "main main . image"
+          "main main . extra"
+          "banner banner banner banner";
+        height: 800px;
+      }
+
+      .header {
+        grid-area: header;
+        color: white;
+        background-color: navy;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .menu {
+        grid-area: menu;
+        color: white;
+        background-color: red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero {
+        grid-area: hero;
+        color: white;
+        background-color: blue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        grid-area: main;
+        color: white;
+        background-color: navy;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .image {
+        grid-area: image;
+        background-color: lightgreen;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .extra {
+        grid-area: extra;
+        background-color: green;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .banner {
+        grid-area: banner;
+        background-color: orange;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="hero">HERO</div>
+      <div class="main">MAIN</div>
+      <div class="image">IMAGE</div>
+      <div class="extra">EXTRA</div>
+      <div class="banner">BANNER</div>
+    </div>
+  </body>
+</html>
