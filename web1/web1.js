@@ -16,7 +16,7 @@ function enterkey(){
 		newDiv.innerText=input.value;
 		const moveDiv=document.createElement("button");
 		moveDiv.className="but";
-		moveDiv.innerText="Done";
+		moveDiv.innerText="✔️";
 		todo.append(newDiv);
 		newDiv.append(moveDiv);
 		input.value="";
@@ -26,7 +26,7 @@ function enterkey(){
 			moveDiv.remove();
 			const removeDiv = document.createElement("button");
 			removeDiv.className="but";
-			removeDiv.innerText="delete";
+			removeDiv.innerText="🧹";
 			newDiv.append(removeDiv);
 
 			removeDiv.addEventListener("click", function(){

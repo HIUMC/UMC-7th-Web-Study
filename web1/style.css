@@ -1,12 +1,19 @@
+body{
+    margin:0;
+    text-align: center; /*이렇게 해서 모두 기본적으로 가운데 정렬*/
+}
 .title{
+    margin-top:50px;
     text-align: center;
-    margin-top : 100px;
-    margin-bottom : 20px;
+    padding:60px;
+    color : #333333;
+    font-family:Arial,sans-serif;
+    margin-bottom:0;
 }
 
 .inputCSS{
-    margin : 50px;
-    transform : translate(300px);
+    margin-top:20px;
+    margin-bottom:80px;
     width : 300px;
     height : 30px;
     font-size:20px;
@@ -15,19 +22,35 @@
 .container{
     display:flex;
     justify-content: center;
-    transform:translate(30px);
+
 }
 
 .inner{
-    margin : 100px;
+    margin : 120px;
     margin-top:0;
-    width:100px;
+    width: 180px;
+    font-size:20px;
+    height:300px;
+    font-family:Arial,sans-serif;
 }
 
 .list{
     margin-top:10px;
     width: 200px;
+    font-size:16px;
+    border:2px solid rgba rgb(206, 236, 255);
+    font-family:Arial,sans-serif;
 }
 .but{
-    margin-left:10px;
+    margin-left:10px;   
+    border: none;
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    font-weight: 600;
+    transition: 0.25s;
+    background-color: aliceblue;
+    color: #b4e4ee;
+
 }
