@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 38px 38px;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .logo a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo span {
+      font-size: 25px;
+      font-weight: bold;
+      color: black;
+      
+    }
+
+    /* Navigation links */
+    .navbar .nav-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .nav-links a {
+      margin-left: 50px;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    /* Settings icon */
+    .navbar .settings {
+      margin-left: 30px;
+    }
+
+    .navbar .settings img {
+      height: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/%EC%97%B0%EC%8A%B5.html">
+        <img src="./main-light-logo.png" alt="Logo">
+        <span>SMUMC</span>
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="#">PROJECTS</a>
+      <a href="#">MEMBERS</a>
+      <a href="#">NOTICE</a>
+      <div class="settings">
+        <img src="./setting.png" alt="Settings">
+      </div>
+    </div>
+
+  </nav>
+</body>
+
+</html>
