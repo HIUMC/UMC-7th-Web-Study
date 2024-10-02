@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #dde1ec;
+    background-color: #e0e6f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    background-color: #dde1ec;
+    background-color: #e0e6f5;
     padding: 40px;
     width: 80%;
     max-width: 1200px;
@@ -20,14 +20,10 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     font-size: 2.5rem;
 }
 
-.divider {
-    border-bottom: 2px solid #ddd;
-    margin: 20px 0;
-}
 
 .input-container {
     display: flex;
@@ -38,7 +34,7 @@ h1 {
 #todo-input {
     width: 100%;
     padding: 15px;
-    border: 1px solid #000000;
+    border: 2px solid #406dcf;
     font-size: 18px;
     font-style: italic; /* 글씨 기울이기 */
 }
