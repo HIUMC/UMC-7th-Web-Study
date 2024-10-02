@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #cfdbed;
+    padding-bottom: 100px;
+    
+
+}
+ 
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+input[type="text"] {
+    
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    
+}
+input::placeholder{
+    font-style: oblique;
+    color: #e5e8f0;
+}
+h2 span {
+    border-bottom: 3px solid #cfdbed; /* 밑줄 스타일 */
+    display: inline-block; /* 텍스트 길이에 맞게 밑줄 적용 */
+    padding-bottom: 4px; /* 텍스트와 밑줄 사이의 간격 */
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.todo, .done {
+    width: 48%;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+button {
+    background-color: #cfdbed;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.delete {
+    background-color: #cfdbed;
+}
+
+ .todo-item{ 
+    border-bottom: 2px solid #cfdbed;
+    padding-bottom: 8px;
+ }
+ .done-item { 
+    border-bottom: 3px solid #cfdbed;
+    padding-bottom: 8px;
+ }
