@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box; /*요소의 전체 너비와 높이에 패딩과 보더 포함 -> 실제 크기 예측 가능*/
+        font-size: 30px; /*모든 요소의 기본 글꼴 크기를 30px로 설정*/
+      }
+
+      .container {
+        display: grid;
+        grid-template: 1fr 4fr 2fr 2fr 1.5fr / 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "header menu menu menu"
+          "hero hero hero hero"
+          "main main . image"
+          "main main . extra"
+          "banner banner banner banner";
+        height: 800px;
+      }
+
+      .header {
+        grid-area: header;
+        color: white;
+        background-color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .menu {
+        grid-area: menu;
+        color: white;
+        background-color: red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero {
+        grid-area: hero;
+        color: white;
+        background-color: rgb(104, 147, 232);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        grid-area: main;
+        color: white;
+        background-color: navy;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .image {
+        grid-area: image;
+        background-color: rgb(120, 216, 216);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .extra {
+        grid-area: extra;
+        background-color: rgb(14, 184, 147);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        aspect-ratio: 1 / 1; /* 정사각형 유지 */
+      }
+
+      .banner {
+        grid-area: banner;
+        background-color: rgb(255, 221, 0);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="menu">MENU</div>
+      <div class="hero">HERO</div>
+      <div class="main">MAIN</div>
+      <div class="image">IMAGE</div>
+      <div class="extra">EXTRA</div>
+      <div class="banner">BANNER</div>
+    </div>
+  </body>
+</html>

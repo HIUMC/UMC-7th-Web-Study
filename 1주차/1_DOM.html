@@ -1,8 +1,21 @@
-<script>
-  const onClickButton = () => {
-    console.log("버튼 클릭");
-  }; //함수 생성
-  const $button = document.querySelector("button");
-  $button.addEventListener("click", onClickButton);
-  //함수를 버튼 태그의 클릭 이벤트에 연결
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="urf-8" />
+    <title>끝말잇기</title>
+  </head>
+  <body>
+    <div><span id="order">1</span>번째 참가자</div>
+    <div>제시어: <span id="word"></span></div>
+    <input type="text" />
+    <button>입력</button>
+    <script>
+      const onClickButton = () => {
+        console.log("버튼 클릭");
+      }; //함수 생성
+      const $button = document.querySelector("button");
+      $button.addEventListener("click", onClickButton);
+      //함수를 버튼 태그의 클릭 이벤트에 연결
+    </script>
+  </body>
+</html>
