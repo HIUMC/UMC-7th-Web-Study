@@ -1,16 +1,56 @@
-.container {
-    font-family: arial;
-    font-size: 24px;
-    margin: 25px;
-    width: 350px;
-    height: 200px;
-    outline: dashed 1px white;
-    display: flex;
+.title{
+    height : 180px;
+    display : flex;
+    align-items: center;
     justify-content: center;
+    font-size: 40px;
+}
+.input{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text] {
+    width: 700px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.todo{
+    display : flex;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 5px;
+    margin-right : 5px;
     align-items: center;
 }
-.innerContainer {
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.list{
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+    width : 200px;
+    height : 700px;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-right : 150px;
+    font-weight: bold;
+}
+#note{
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
+    margin : 20px;
+    space-be
+}
+input::placeholder{
+    font-size : 15px;
+    opacity: 0.5;
+    font-style: italic;
+}
+.todo button{
+    margin-left : auto;
+    height : 25px;
 }
