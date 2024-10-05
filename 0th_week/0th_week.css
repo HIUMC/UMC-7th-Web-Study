@@ -1,0 +1,59 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 상단 고정 네비게이션 바 */
+.navbar {
+    background-color: #333;           /* 네비게이션 바 배경색 */
+    position: fixed;                  /* 상단에 고정 */
+    top: 0;                           /* 페이지 상단에서 고정 */
+    width: 100%;                      /* 전체 가로 너비 */
+    display: flex;                    /* flex를 이용해 각 박스를 한 줄로 배치 */
+    justify-content: space-around;    /* 각 항목을 균등하게 배치 */
+    padding: 10px 0;                  /* 네비게이션 바의 패딩 */
+    z-index: 1000;                    /* 다른 요소들 위에 위치하도록 설정 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);  /* 그림자를 통해 구분 */
+}
+
+/* 개별 박스 스타일 */
+.nav-box {
+    background-color: #444;           /* 박스 배경색 */
+    padding: 10px 20px;               /* 박스 안쪽 여백 */
+    border: 2px solid #555;           /* 박스 테두리 */
+    border-radius: 5px;               /* 모서리를 둥글게 */
+}
+
+.nav-box a {
+    color: white;                     /* 링크 텍스트 색상 */
+    text-decoration: none;            /* 링크 밑줄 제거 */
+    font-size: 16px;
+}
+
+.nav-box a:hover {
+    color: #ff9800;                   /* 마우스를 올렸을 때 텍스트 색 변경 */
+}
+
+/* 본문 내용 스타일 */
+.content {
+    padding-top: 100px;               /* 상단 고정 네비게이션 바와 겹치지 않도록 상단 여백 */
+    text-align: center;
+}
+
+/* 긴 텍스트를 넣기 위한 긴 컨텐츠 영역 */
+.long-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.long-content p {
+    margin-bottom: 20px;
+}
+
+/* 추가: 스크롤을 위해 본문을 길게 만들기 */
+.long-content p::before {
+    content: "Scroll down to see the effect. ";
+    font-weight: bold;
+}
