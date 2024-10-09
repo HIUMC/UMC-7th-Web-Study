@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="m1.css" />
+  </head>
+
+  <body>
+    <div class="todo-container">
+      <!--제목-->
+      <header>
+        <h1>UMC Study Plan</h1>
+      </header>
+    </div>
+    
+    <!--입력-->
+    <section>
+      <input type="text" id="inputBox" placeholder = "스터디 계획을 작성해보세요!" onkeydown="keyCodeCheck()"></input>
+    </section>
+    
+    <div class="list-container">
+
+      <div>
+        <h2>해야 할 일</h2>
+        <ul id = "todoList"></ul>
+      </div>
+    
+      <div>
+        <h2>해낸 일</h2>
+        <ul id="completeList"></ul>
+      </div>
+    
+    </div>
+
+    <script src="m1.js"></script>
+
+    
+  </body>
+</html>
