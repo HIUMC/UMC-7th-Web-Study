@@ -1,0 +1,39 @@
+.movie-card {
+  position: relative;
+  width: 128px; /* 원하는 너비로 조정 */
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px; /* 카드의 모서리를 둥글게 */
+  overflow: hidden; /* 이미지가 카드의 둥근 모서리에 맞춰 자르기 */
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* 포스터 이미지의 모서리를 둥글게 */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* 검정 배경 */
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px; /* 오버레이의 모서리를 둥글게 */
+}
+
+.movie-card:hover .overlay {
+  opacity: 1;
+}
