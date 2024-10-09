@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box2">UMC Study Plan</div>
+
+    <input type="text" id="todoInput" placeholder="할 일 추가">
+    <button onclick="addTodo()">추가</button>
+
+    <div class="container">
+        <!-- 해야 할 일 목록 -->
+        <div class="list">
+            <h3>해야 할 일</h3>
+            <ul id="todoList"></ul>
+        </div>
+        <!-- 해낸 일 목록 -->
+        <div class="list">
+            <h3>해낸 일</h3>
+            <ul id="completedList"></ul>
+        </div>
+    </div>
+
+    <!-- JavaScript 코드는 body 태그 안 맨 아래에 위치 -->
+    <script>
+        // 해야 할 일을 추가하는 함수
+        function addTodo() {
+            var todoInput = document.getElementById('todoInput');
+            var todoText = todoInput.value;
+
+            if (todoText === '') {
+                alert('할 일을 입력하세요.');
+                return;
+            }
+
+            var ul = document.getElementById('todoList');
+            var li = document.createElement('li');
+
+            // 할 일 텍스트
+            var todoItem = document.createElement('span');
+            todoItem.textContent = todoText;
+
+            // 완료 버튼 생성
+            var completeButton = document.createElement('button');
+            completeButton.textContent = '완료';
+            completeButton.className = 'complete-btn';
+            completeButton.addEventListener('click', function() {
+                moveToCompleted(li);
+            });
+
+            // li 요소에 할 일 텍스트와 완료 버튼 추가
+            li.appendChild(todoItem);
+            li.appendChild(completeButton);
+            ul.appendChild(li);
+
+            todoInput.value = '';  // 입력 필드 초기화
+        }
+
+        // 해야 할 일을 해낸 일로 이동시키는 함수
+        function moveToCompleted(item) {
+            var completedList = document.getElementById('completedList');
+
+            // 완료된 항목에 삭제 버튼 추가
+            var deleteButton = document.createElement('button');
+            deleteButton.textContent = '삭제';
+            deleteButton.className = 'delete-btn';
+            deleteButton.addEventListener('click', function() {
+                completedList.removeChild(item);
+            });
+
+            // 기존 완료 버튼을 삭제하고 삭제 버튼 추가
+            var taskText = item.textContent;  // 텍스트 저장
+            item.innerHTML = '';  // li 내부를 비우기
+            item.appendChild(document.createTextNode(taskText));  // 텍스트 복사
+            item.appendChild(deleteButton);
+
+            // 해낸 일 목록에 항목 추가
+            completedList.appendChild(item);
+        }
+    </script>
+</body>
+</html>
