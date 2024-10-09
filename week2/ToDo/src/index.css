@@ -1,0 +1,43 @@
+body {
+  padding: 20px;
+  background-color: #e9f9f0;
+}
+
+.todo-input, .edit-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.add-todo-button, .delete-button, .edit-button {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  color: white;
+}
+
+.add-todo-button {
+  background-color: #5cb85c;
+}
+
+.delete-button {
+  background-color: #ec6965;
+}
+
+.edit-button {
+  background-color: #f1b45e;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
