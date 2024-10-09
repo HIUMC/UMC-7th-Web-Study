@@ -1,0 +1,28 @@
+.movie-item {
+  position: relative;
+  display: inline-block;
+}
+
+.movie-poster {
+  border-radius: 20px;
+  display: block;
+  margin: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+
+  opacity: 0;
+  z-index: 1;
+}
+
+.movie-item:hover .overlay {
+  opacity: 1;
+}
