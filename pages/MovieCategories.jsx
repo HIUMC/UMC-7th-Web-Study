@@ -5,22 +5,22 @@ const categories = [
   {
     name: '현재 상영중인',
     path: '/movies/now-playing',
-    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Farsenal-pc-2024-wallpapers&psig=AOvVaw3DouoMCT_R0hRy1agwesWk&ust=1730287895139000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjN44u_s4kDFQAAAAAdAAAAABAE',  
+    image: 'https://wallpapercave.com/wp/wp13143874.jpg',  
   },
   {
     name: '인기있는',
     path: '/movies/popular',
-    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwall.alphacoders.com%2Fbig.php%3Fi%3D1348900&psig=AOvVaw3DouoMCT_R0hRy1agwesWk&ust=1730287895139000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjN44u_s4kDFQAAAAAdAAAAABAP',  
+    image: 'https://images6.alphacoders.com/134/thumb-1920-1348900.jpeg',  
   },
   {
     name: '높은 평가를 받은',
     path: '/movies/top-rated',
-    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwall.alphacoders.com%2Fbig.php%3Fi%3D584539&psig=AOvVaw3DouoMCT_R0hRy1agwesWk&ust=1730287895139000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjN44u_s4kDFQAAAAAdAAAAABAY',  
+    image: 'https://images5.alphacoders.com/584/thumb-1920-584539.jpg',  
   },
   {
     name: '개봉 예정중인',
     path: '/movies/upcoming',
-    image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fdesktop-wallpaper-tnnmg&psig=AOvVaw3DouoMCT_R0hRy1agwesWk&ust=1730287895139000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjN44u_s4kDFQAAAAAdAAAAABAh', 
+    image: 'https://e0.pxfuel.com/wallpapers/617/942/desktop-wallpaper-emirates-stadium-arsenal-stadium.jpg', 
   },
 ];
 
