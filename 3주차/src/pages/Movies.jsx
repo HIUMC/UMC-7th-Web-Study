@@ -70,7 +70,7 @@ const Movies = () => {
       setMovies(data.results);
     } catch (error) {
       console.error('Failed to fetch movies:', error);
-      setMovies([]); // 에러 발생 시 빈 배열로 설정
+      setMovies([]); 
     } 
   };
 
@@ -78,7 +78,7 @@ const Movies = () => {
     if (category) {
       fetchMovies(category);
     } else {
-      setMovies([]); // 카테고리 없이 페이지가 열릴 때 영화 데이터 초기화
+      setMovies([]);
     }
   }, [category]);
 
