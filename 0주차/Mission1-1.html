@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      body {
+        perspective: 1000px; /* 3D 효과를 보기 위한 원근법 설정 */
+      }
+
+      .box {
+        transform: translateZ(100px);
+        perspective: 500px; /* 3D 변환을 보기 위해 필수 */
+        border: 1px solid black;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Translate</div>
+  </body>
+</html>

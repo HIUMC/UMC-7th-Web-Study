@@ -1,1 +1,0 @@
-# UMC-7th-Web-Study
