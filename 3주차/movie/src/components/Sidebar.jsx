@@ -1,15 +1,19 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import styled from 'styled-components';
+import { FaSearch } from "react-icons/fa";
+import { PiFilmSlateBold } from "react-icons/pi";
 
 const Sidebar = () => {
     return (
         <SideList>
             <Sideitem>
-                <StyledLink to ="/search">🔍 찾기</StyledLink>
+                <FaSearch />
+                <StyledLink to ="/search"> 찾기</StyledLink>
             </Sideitem>
             <Sideitem>
-                <StyledLink to ="/categories">🎬 영화</StyledLink>
+                <PiFilmSlateBold/>
+                <StyledLink to ="/movies"> 영화</StyledLink>
             </Sideitem>
         </SideList>
     )
@@ -24,8 +28,8 @@ const StyledLink = styled(Link)`
 
 const SideList = styled.div`
     left:0;
-    width: 150px;
-    height: 100%;
+    height: 100vh;
+    width: 200px;
     display: flex;
     flex-direction: column;
     padding-top: 0px;
@@ -36,4 +40,7 @@ const Sideitem = styled.div`
     padding: 7px 10px;
     font-size: 15px;
     text-align : left;
+    &:hover{ /* 마우스 커서를 가져다대면 이미지의 밝기를 줄임 */
+        filter: brightness(60%); 
+    }
 `

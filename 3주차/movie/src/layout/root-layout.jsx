@@ -19,11 +19,13 @@ const RootLayout = () => {
 
 export default RootLayout;
 
-const RootDiv = styled.div`
+const RootDiv = styled.div`    
+    display: flex;
     justify-content: start;
-`
-
+    heigth : 100%;
+`;
 const Content = styled.div`
-    position : fixed;
-    right : 150px;
-`
+    flex-grow: 1;
+    padding: 20px;
+    background-color : #251F1F;
+    `;

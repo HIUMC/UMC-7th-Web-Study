@@ -6,8 +6,13 @@ import LoginPage from './pages/login';
 import SignupPage from './pages/signup';
 import NotFound from './pages/not-found';
 import RootLayout from './layout/root-layout';
-import CategoriesPage from './pages/categories';
+import CategoriesPage from './pages/movies';
 import SearchPage from './pages/search';
+import NowPlaying from './pages/movies/now-playing';
+import TopRated from './pages/movies/top-rated';
+import Popular from './pages/movies/popular';
+import UpComing from './pages/movies/up-coming';
+import MovieLayout from './layout/movies-layout';
 
 const router = createBrowserRouter([
   {
@@ -36,9 +41,35 @@ const router = createBrowserRouter([
         errorElement : <NotFound></NotFound>
       },
       {
-        path : '/categories',
-        element: <CategoriesPage/>,
-        errorElement : <NotFound></NotFound>
+        path : '/movies',
+        element: <MovieLayout/>,
+        errorElement : <NotFound></NotFound>,
+        children : [{
+          index: true,
+          element: <CategoriesPage/>,
+          errorElement : <NotFound></NotFound>  
+        },
+        {
+          path : '/movies/now-playing',
+          element : <NowPlaying></NowPlaying>,
+          errorElement : <NotFound></NotFound>,
+        },
+        {
+          path : '/movies/top-rated',
+          element : <TopRated></TopRated>,
+          errorElement : <NotFound></NotFound>,
+        },
+        {
+          path : '/movies/popular',
+          element : <Popular></Popular>,
+          errorElement : <NotFound></NotFound>,
+        },
+        {
+          path : '/movies/up-coming',
+          element : <UpComing />,
+          errorElement : <NotFound></NotFound>,
+        }
+      ]
       }
     ]
   }

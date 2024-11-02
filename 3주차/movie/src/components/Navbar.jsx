@@ -12,7 +12,7 @@ const Navbar = () => {
                     <NavLink>
                         <StyledLink to ="login">로그인</StyledLink>
                     </NavLink>
-                    <NavLink    >
+                    <NavLink className = 'signup'>
                         <StyledLink to ="signup">회원가입</StyledLink>
                     </NavLink>
                 </NavLinks>
@@ -24,7 +24,10 @@ export default Navbar;
 const StyledLink = styled(Link)`
     text-decoration: none; /* 밑줄 없애기 */
     color: inherit; /* 부모 요소의 색상 사용 */
+
+    }
 `;
+
 const Header = styled.div`
     display: flex;
     align-items : center;
@@ -45,10 +48,18 @@ const Logo = styled.h2`
 const NavLinks = styled.div`
     display : flex;
     gap : 15px;
+    
 `
 
 const NavLink = styled.div`
     background-color : #282828;
     padding : 10px;
     font-color : 'white';
+    border-radius: 7px;
+    &:hover{ /* 마우스 커서를 가져다대면 이미지의 밝기를 줄임 */
+        filter: brightness(60%); 
+    }
+    &.signup{
+        background-color : #FF5675;
+    }
 `
