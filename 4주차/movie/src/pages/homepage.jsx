@@ -7,10 +7,8 @@ const HomePage = () => {
         <MovieList>
             {MOVIES.results.map((movie) => {
             return(
-                <MovieButton
-                key={movie.id}
-                {...movie}
-                />
+                <MovieButton key={movie.id}{...movie}>
+                </MovieButton>
             )})}
             </MovieList>
     );
