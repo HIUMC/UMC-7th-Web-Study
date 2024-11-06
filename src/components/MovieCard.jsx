@@ -1,29 +1,21 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
   return (
-    <Link to={`/movies/${movie.id}`} style={styles.cardLink}>
-      <div style={styles.card}>
-        <div
-          style={{
-            ...styles.poster,
-            backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
-          }}
-        />
-        <h3 style={styles.title}>{movie.title}</h3>
-        <p style={styles.releaseDate}>{movie.release_date}</p>
-      </div>
-    </Link>
+    <div style={styles.card}>
+      <div
+        style={{
+          ...styles.poster,
+          backgroundImage: `url(https://image.tmdb.org/t/p/w500${movie.poster_path})`,
+        }}
+      />
+      <h3 style={styles.title}>{movie.title}</h3>
+      <p style={styles.releaseDate}>{movie.release_date}</p>
+    </div>
   );
 };
 
 const styles = {
-  cardLink: {
-    textDecoration: 'none',
-    color: 'inherit',
-  },
   card: {
     width: '200px',
     margin: '10px',

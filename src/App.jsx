@@ -1,14 +1,18 @@
 // src/App.jsx
+
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Search from './pages/Search';
-import MovieCategories from './pages/MovieCategories';
-import MovieDetail from './pages/MovieDetail';
+import MovieCategories from './pages/MovieCategories'; 
+import NowPlaying from './pages/Nowplaying';
+import Popular from './pages/Popular';
+import TopRated from './pages/TopRated';
+import Upcoming from './pages/UpComing';
 
 const App = () => {
   return (
@@ -22,9 +26,11 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/search" element={<Search />} />
-            <Route path="/movies" element={<MovieCategories />} />
-            <Route path="/movies/category/:category" element={<MovieCategories />} />
-            <Route path="/movies/:movieId" element={<MovieDetail />} />
+            <Route path="/movies" element={<MovieCategories />} /> 
+            <Route path="/movies/now-playing" element={<NowPlaying />} />
+            <Route path="/movies/popular" element={<Popular />} />
+            <Route path="/movies/top-rated" element={<TopRated />} />
+            <Route path="/movies/upcoming" element={<Upcoming />} />
           </Routes>
         </div>
       </div>
@@ -32,10 +38,11 @@ const App = () => {
   );
 };
 
+
 const styles = {
   appContainer: {
     display: 'flex',
-    alignItems: 'stretch',
+    alignItems: 'stretch', 
     minHeight: '100vh',
   },
   mainContent: {
@@ -45,5 +52,20 @@ const styles = {
     color: '#fff',
   },
 };
+
+// const styles = {
+//   appContainer: {
+//     display: 'flex',
+//     minHeight: '100vh',
+//   },
+//   mainContent: {
+//     flex: 1,
+//     padding: '20px',
+//     backgroundColor: '#181818',
+//     color: '#fff',
+//     minHeight: '100vh',
+//   },
+// };
+
 
 export default App;
