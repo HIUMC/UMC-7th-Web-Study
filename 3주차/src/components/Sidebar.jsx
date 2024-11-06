@@ -7,7 +7,7 @@ const Sidebar = () => {
       <Link to="/" style={styles.logo}>YONGCHA</Link>
       <nav>
         <Link to="/search" style={styles.link}>🔍 찾기</Link>
-        <Link to="/movies" style={styles.link}>🎬 영화</Link> {/* 영화 버튼 경로를 /movies로 설정 */}
+        <Link to="/movies" style={styles.link}>🎬 영화</Link> {}
       </nav>
     </div>
   );
@@ -19,7 +19,6 @@ const styles = {
     backgroundColor: '#111',
     color: '#fff',
     padding: '20px',
-    //height: '100%',
   },
   logo: {
     fontSize: '24px',
