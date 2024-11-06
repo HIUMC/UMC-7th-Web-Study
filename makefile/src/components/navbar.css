@@ -1,0 +1,25 @@
+.navbar {
+    width : 100%;
+    background-color : black;
+    padding : 15px 0px;
+    display: flex;
+}
+
+.navbarMenu{
+    color: white;
+    margin : 8px;
+    text-decoration : none;
+    text-align : right;
+    
+}
+
+
+.navbarMenu1{
+    text-align : left;
+    color : red;
+    margin-right : auto;
+}
+
+.navbarMenu2{
+    background-color:red;
+}

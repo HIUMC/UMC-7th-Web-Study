@@ -1,9 +1,5 @@
 import "./App.css"
-// eslint-disable-next-line no-unused-vars
-import { useState } from 'react'
-// eslint-disable-next-line no-unused-vars
 import {MOVIES} from "../mocks/movies";
-
 
 
 const MovieList = () =>{
@@ -22,12 +18,6 @@ const MovieList = () =>{
   }
 
 
-  const App = () => {
-    return (
-        <div>
-            <MovieList />
-        </div>
-    )
-  }
+
   
-  export default App;
+  export default MovieList;

@@ -1,8 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html, body {
+  background-color : black;
+  color: white;
+  margin-top : 0;
+  overflow-x : auto;
+  min-width : 100vw;
 }
 
 .logo {
@@ -18,20 +19,9 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+
+
 
 .card {
   padding: 2em;
@@ -53,7 +43,11 @@
 .poster-box img:hover {
   box-shadow : 0px 4px 10px rgba(0, 0, 1, 0.5);
   filter : brightness(0.7);
+}
 
+.box :hover{
+  box-shadow : 0px 4px 10px rgba(0, 0, 1, 0.5);
+  filter : brightness(0.7);
 }
 
 .poster-box {
@@ -86,4 +80,6 @@ ul{
   display : gird;
   flex-direction : column;
   align-items : flex-start;
+  justify-content : flex-start ;
+  padding-top : 1rem;
 }

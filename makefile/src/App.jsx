@@ -2,6 +2,9 @@ import "./App.css";
 import { useState } from "react";
 import { MOVIES } from "../mocks/movies";
 import "./index.css"
+import axios from "axios";
+import NavBar from "./components/navbar"
+
 
 const MovieList = () => {
   const posterimage = "https://image.tmdb.org/t/p/w500";
@@ -19,11 +22,20 @@ const MovieList = () => {
   );
 };
 
+
+
+
+
 const App = () => {
   return (
-    <div>
-      <MovieList />
-    </div>
+    <>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <MovieList />
+      </div>
+    </>
   );
 };
 
