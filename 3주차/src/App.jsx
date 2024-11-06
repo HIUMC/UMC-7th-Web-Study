@@ -1,86 +1,38 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import HomePage from './pages/Home';
-import LoginPage from './pages/Login';
-import SignupPage from './pages/SignUp';
-import NotFound from './pages/NotFound';
+import NowPlaying from './pages/movies/NowPlaying';
+import TopRated from './pages/movies/TopRated.jsx';
+import UpComing from './pages/movies/UpComing.jsx';
+import MovieDetail from './components/MovieDetail';
+import Home from './pages/Home'; 
+import Login from './pages/Login'; 
+import Signup from './pages/SignUp'; 
 import RootLayout from './layout/RootLayout';
-import SearchPage from './pages/Search';
-import NowPlaying from './pages/movies/now-playing';
-import TopRated from './pages/movies/top-rated.jsx';
-import Popular from './pages/movies/popular';
-import UpComing from './pages/movies/up-coming.jsx';
-import MovieLayout from './layout/MoviesLayout';
-import CategoriesPage from './pages/movies';
+import MoviesCategory from './components/MovieCategory';
+import Search from './pages/Search';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <RootLayout />,
-    errorElement: <NotFound />,  // Catch-all error for root route
     children: [
-      {
-        index: true,
-        element: <HomePage />,
-        errorElement: <NotFound />,
-      },
-      {
-        path: '/login',
-        element: <LoginPage />,
-        errorElement: <NotFound />,
-      },
-      {
-        path: '/signup',
-        element: <SignupPage />,
-        errorElement: <NotFound />,
-      },
-      {
-        path: '/search',
-        element: <SearchPage />,
-        errorElement: <NotFound />,
-      },
-      {
-        path: '/movies',
-        element: <MovieLayout />,
-        errorElement: <NotFound />,  // Catch-all error for movie routes
-        children: [
-          {
-            index: true,
-            element: <CategoriesPage />,  // Assuming CategoriesPage exists
-            errorElement: <NotFound />,
-          },
-          {
-            path: 'now-playing',  // Path updated without leading slash
-            element: <NowPlaying />,
-            errorElement: <NotFound />,
-          },
-          {
-            path: 'top-rated',  // Path updated without leading slash
-            element: <TopRated />,
-            errorElement: <NotFound />,
-          },
-          {
-            path: 'popular',  // Path updated without leading slash
-            element: <Popular />,
-            errorElement: <NotFound />,
-          },
-          {
-            path: 'up-coming',  // Path updated without leading slash
-            element: <UpComing />,
-            errorElement: <NotFound />,
-          },
-        ],
-      },
-    ],
-  },
+      { index: true, element: <Home /> },
+      { path: "/movies", element: <MoviesCategory /> },
+      { path: "/search", element: <Search /> },
+      { path: "/movies/now-playing", element: <NowPlaying /> },
+      { path: "/movies/popular", element: <Popular /> },
+      { path: "/movies/top-rated", element: <TopRated /> },
+      { path: "/movies/upcoming", element: <UpComing /> },
+      { path: "/movies/:movieId", element: <MovieDetail /> },
+      { path: "/login", element: <Login /> },
+      { path: "/signup", element: <Signup /> },
+    ]
+  }
 ]);
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <RouterProvider router={router} />
   );
 }
 
