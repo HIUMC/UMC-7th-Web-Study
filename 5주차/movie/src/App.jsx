@@ -16,6 +16,7 @@ import MovieLayout from './layout/movies-layout';
 import MovieDetails from './pages/movies/MovieDetails';
 import { LoginProvider } from './components/LoginProvider';
 
+import Ex from './components/Ex';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage/>,
         errorElement : <NotFound></NotFound>
+      },
+      {
+      path : '/ex',
+      element : <Ex></Ex>,
+      errorElement : <NotFound></NotFound>
       },
       {
         path : '/login',

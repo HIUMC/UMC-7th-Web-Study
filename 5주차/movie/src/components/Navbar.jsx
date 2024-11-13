@@ -14,9 +14,11 @@ const Navbar = () => {
                 </Logo>
                 {online === 'online' 
                 ? <NavLinks>
-                    <p style={{marginRight : "3px"}}>
+                    <NavLink>
+                    <StyledLink>
                         {user.email}님, 환영합니다.
-                    </p>
+                    </StyledLink>
+                    </NavLink>
                     <NavLink className = 'signup' onClick={logout}>
                         <StyledLink to ="/">로그아웃</StyledLink>
                     </NavLink>
