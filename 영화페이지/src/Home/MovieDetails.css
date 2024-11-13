@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.movie-header {
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.movie-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e91e63; /* 강조 색상 */
+}
+
+.movie-info {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #b0b0b0; /* 연한 회색 */
+}
+
+.movie-overview {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #dddddd; /* 연한 회색 */
+}
+
+/* 영화 포스터 이미지 */
+.movie-poster {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* 감독 및 출연진 섹션 */
+.credits-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.credits-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 그리드 레이아웃으로 정렬 */
+.credits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 개별 프로필 스타일 */
+.credit-item {
+    text-align: center;
+    width: 100px;
+}
+
+.credit-profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #555; /* 프로필 이미지 테두리 */
+}
+
+.credit-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.credit-role {
+    font-size: 0.9rem;
+    color: #888888;
+}

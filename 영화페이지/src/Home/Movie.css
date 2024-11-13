@@ -1,0 +1,7 @@
+.movie-page {
+    background-color: #000; 
+    color: #fff;            
+    height: 100vh;          
+    display: flex;
+
+}
