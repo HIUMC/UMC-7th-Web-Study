@@ -1,0 +1,53 @@
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .movie-box {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter : brightness(0.5)
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .movie-title {
+    font-size : 1.2rem;
+    margin : 0 0 10px;
+    font-weight : bold;
+  }
+  
+
+
+  body {
+    background-color: #1a1a1a; /* 검정 9 : 흰색 1 */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* 화면 전체 높이 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
